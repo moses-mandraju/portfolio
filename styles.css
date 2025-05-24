@@ -109,46 +109,13 @@ section h2 {
 
 /* Contact Section: Dark Mode Consistency */
 #contact {
-  background: #1a1a1a;
-  padding: 3rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    text-align: center;
+    padding: 50px;
 }
 
-.social-links img {
-    width: 40px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-    transform: scale(1.1);
-}
-
-
-form input, form textarea {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 12px;
-  background: #262626;
-  border: 1px solid #00acc1;
-  color: #e0e0e0;
-  border-radius: 6px;
-}
-
-form button {
-  padding: 12px;
-  background: #00e5ff;
-  color: #121212;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-form button:hover {
-  background: #00acc1;
+#contact .social-links a {
+    margin: 0 15px;
+    display: inline-block;
 }
 
 /* Footer */
