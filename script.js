@@ -1,13 +1,3 @@
-// Dark Mode Toggle
-document.getElementById("dark-mode-toggle").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-        this.textContent = "☀️ Light Mode";
-    } else {
-        this.textContent = "🌙 Dark Mode";
-    }
-});
-
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll("nav ul li a").forEach(anchor => {
     anchor.addEventListener("click", function(e) {
