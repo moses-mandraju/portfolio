@@ -7,13 +7,6 @@ body {
   background-color: #121212;
   color: #e0e0e0;
   scroll-behavior: smooth;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
 }
 
 /* Links */
@@ -74,15 +67,83 @@ section h2 {
   margin-bottom: 2rem;
 }
 
-/* Skills Grid */
+/* Technical Skills: Side by Side Layout */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  text-align: center;
 }
 
 .skills-grid div {
-  flex: 1 1 200px;
   background-color: #262626;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills-grid div:hover {
+  transform: scale(1.05);
+}
+
+.skills-grid strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #00e5ff;
+}
+
+/* Experience & Projects: Maintain Dark Theme */
+.card {
+  background-color: #1e272e !important;
+  color: #e0e0e0 !important;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 255, 255, 0.2);
+}
+
+/* Contact Section: Dark Mode Consistency */
+#contact {
+  background: #1a1a1a;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #262626;
+  border: 1px solid #00acc1;
+  color: #e0e0e0;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 12px;
+  background: #00e5ff;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #00acc1;
+}
+
+/* Footer */
+footer {
+  background-color: #0d0d0d;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 1rem;
+}
