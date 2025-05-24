@@ -7,14 +7,42 @@
   <title>Moses Mandraju | Full Stack Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .header-name {
+      color: #00bfff !important; /* Blue tone for Moses */
+    }
+    .video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.15;
+    }
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+    header {
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://images.unsplash.com/photo-1603415526960-f8f60b6f0119?auto=format&fit=crop&w=150&q=80" alt="Moses Mandraju" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
-    <h1 class="display-4">Moses Mandraju</h1>
-    <p class="lead">Full Stack Developer | Java, Spring Boot, React, IBM MQ</p>
-    <p><a href="mailto:mosesmusician77@gmail.com">mosesmusician77@gmail.com</a> | +91 9885988015 | Hyderabad, India</p>
+  <header class="text-center py-5">
+    <video class="video-bg" autoplay muted loop playsinline>
+      <source src="https://cdn.coverr.co/videos/coverr-cyber-glow-technology-3114/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <img src="https://images.unsplash.com/photo-1603415526960-f8f60b6f0119?auto=format&fit=crop&w=150&q=80" alt="Moses Mandraju" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+      <h1 class="display-4 header-name">Moses Mandraju</h1>
+      <p class="lead">Full Stack Developer | Java, Spring Boot, React, IBM MQ</p>
+      <p><a href="mailto:mosesmusician77@gmail.com">mosesmusician77@gmail.com</a> | +91 9885988015 | Hyderabad, India</p>
+    </div>
   </header>
 
   <section id="about">
@@ -89,7 +117,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Moses Mandraju. Designed with teal & motion by ChatGPT.</p>
+    <p>&copy; 2025 Moses Mandraju. Designed with video background and motion.</p>
   </footer>
 
 </body>
