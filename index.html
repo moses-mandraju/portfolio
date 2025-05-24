@@ -1,45 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moses Mandraju | Full Stack Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .header-name {
-      color: #00bfff !important; /* Blue tone for Moses */
-    }
-    .video-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-      opacity: 0.15;
-    }
-    header .content {
-      position: relative;
-      z-index: 2;
-    }
-    header {
-      position: relative;
-      overflow: hidden;
-    }
-  </style>
 </head>
 <body>
 
-  <header class="text-center py-5">
+  <header>
     <video class="video-bg" autoplay muted loop playsinline>
-      <source src="https://cdn.coverr.co/videos/coverr-cyber-glow-technology-3114/1080p.mp4" type="video/mp4">
+      <source src="assets/plexus.mp4" type="video/mp4" />
     </video>
     <div class="content">
-      <img src="https://images.unsplash.com/photo-1603415526960-f8f60b6f0119?auto=format&fit=crop&w=150&q=80" alt="Moses Mandraju" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
-      <h1 class="display-4 header-name">Moses Mandraju</h1>
+      <h1 class="display-4">Moses Mandraju</h1>
       <p class="lead">Full Stack Developer | Java, Spring Boot, React, IBM MQ</p>
       <p><a href="mailto:mosesmusician77@gmail.com">mosesmusician77@gmail.com</a> | +91 9885988015 | Hyderabad, India</p>
     </div>
@@ -47,16 +22,28 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a passionate Full Stack Developer with a strong background in Java, Spring Boot, and front-end technologies like React. With 3 years at Infosys, I've delivered solutions for enterprise-grade systems including those for Verizon.</p>
+    <p>I’m a passionate Full Stack Developer with a strong background in Java, Spring Boot, and React. With 3 years of experience at Infosys, I've worked on large-scale systems for Verizon and other enterprise clients.</p>
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-3"><strong>Languages</strong><br>Java, JavaScript, HTML, CSS</div>
-      <div class="col-md-3"><strong>Frameworks</strong><br>Spring Boot, React</div>
-      <div class="col-md-3"><strong>Tools</strong><br>Jenkins, GitLab, Linux</div>
-      <div class="col-md-3"><strong>Other</strong><br>IBM MQ, Apigee, CI/CD</div>
+    <div class="skills-grid">
+      <div>
+        <strong>Languages</strong>
+        Java, JavaScript, HTML, CSS
+      </div>
+      <div>
+        <strong>Frameworks</strong>
+        Spring Boot, React
+      </div>
+      <div>
+        <strong>Tools</strong>
+        Jenkins, GitLab, Linux
+      </div>
+      <div>
+        <strong>Other</strong>
+        IBM MQ, Apigee, CI/CD
+      </div>
     </div>
   </section>
 
@@ -65,11 +52,10 @@
     <div class="card p-4 mb-3">
       <h4>Infosys | Full Stack Developer (2022 - Present)</h4>
       <ul>
-        <li>Developed microservices with Java 17, Spring Boot, JPA & Hibernate.</li>
-        <li>Built responsive UIs using React and Axios for API integration.</li>
-        <li>Implemented asynchronous messaging with IBM MQ.</li>
-        <li>Secured REST APIs using Apigee with HMAC authentication.</li>
-        <li>Set up CI/CD pipelines with Jenkins; deployed in Linux environments.</li>
+        <li>Built scalable microservices using Java 17, Spring Boot, and JPA.</li>
+        <li>Created responsive UIs with React, integrated using Axios.</li>
+        <li>Used IBM MQ for messaging, secured APIs via Apigee Proxy.</li>
+        <li>Set up CI/CD pipelines with Jenkins, managed builds and deployment.</li>
       </ul>
     </div>
   </section>
@@ -82,7 +68,7 @@
           <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Enterprise Dashboard</h5>
-            <p class="card-text">Real-time monitoring interface for microservices using React.</p>
+            <p class="card-text">Real-time metrics dashboard built with React for microservices.</p>
           </div>
         </div>
       </div>
@@ -91,7 +77,7 @@
           <img src="https://images.unsplash.com/photo-1581090700227-1e8e068f2212?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Project 2">
           <div class="card-body">
             <h5 class="card-title">Secure Messaging API</h5>
-            <p class="card-text">REST API with Spring Boot and IBM MQ, secured with Apigee.</p>
+            <p class="card-text">Spring Boot API with IBM MQ integration secured by Apigee.</p>
           </div>
         </div>
       </div>
@@ -100,7 +86,7 @@
           <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Project 3">
           <div class="card-body">
             <h5 class="card-title">CI/CD Pipeline</h5>
-            <p class="card-text">Fully automated Jenkins pipeline with deployment strategies.</p>
+            <p class="card-text">End-to-end deployment pipelines using Jenkins and GitLab.</p>
           </div>
         </div>
       </div>
@@ -117,7 +103,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Moses Mandraju. Designed with video background and motion.</p>
+    <p>&copy; 2025 Moses Mandraju. Designed with ❤️ and tech.</p>
   </footer>
 
 </body>
