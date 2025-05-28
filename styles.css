@@ -67,6 +67,19 @@ section h2 {
   margin-bottom: 2rem;
 }
 
+.display-4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #ddd;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+
 /* Technical Skills: Side by Side Layout */
 .skills-grid {
   display: grid;
