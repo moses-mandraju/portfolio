@@ -181,10 +181,18 @@ footer {
 }
 
 
-/* Footer */
-footer {
-  background-color: #0d0d0d;
-  color: #aaa;
-  text-align: center;
-  padding: 2rem 1rem;
+.social-links a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 10px;
 }
+.contact-bar img {
+  filter: brightness(1.6);
+  transition: filter 0.3s ease;
+}
+
+.contact-bar img:hover {
+  filter: brightness(2);
+}
+
+
