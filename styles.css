@@ -139,12 +139,19 @@ footer {
 }
 
 .social-wrapper a {
-  display: inline-flex;
-  width: 2.5rem;
-  height: 2.5rem;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-wrapper a:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* glow effect */
+  transform: scale(1.1);
 }
 
 .social-wrapper img {
@@ -152,11 +159,38 @@ footer {
   height: 32px;
   object-fit: contain;
   filter: brightness(2);
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.social-wrapper img:hover {
-  filter: brightness(2);
+.social-wrapper a:hover img {
+  filter: brightness(3);
+  transform: scale(1.15);
+}
+
+/* Tooltip popup */
+.social-wrapper a::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.social-wrapper a:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .social-wrapper a:hover {
