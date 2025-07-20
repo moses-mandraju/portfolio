@@ -49,6 +49,40 @@ header h1 {
   color: #00bfff;
 }
 
+.intro-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #00bfff;
+}
+
+.intro-header h1 {
+  font-size: 3rem;
+  color: #00bfff;
+  margin: 0;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 2.5s infinite;
+}
+
+@keyframes wave-animation {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(15deg); }
+  20%, 40% { transform: rotate(-10deg); }
+}
+
 /* Sections */
 section {
   padding: 3rem 1.5rem;
