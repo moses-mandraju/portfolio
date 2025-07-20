@@ -129,13 +129,13 @@ footer {
 
 .social-wrapper {
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
   padding: 0.75rem 0.75rem;
   background-color: rgba(255, 255, 255, 0.08); /* visible on dark bg */
   border-radius: 9999px; /* full round corners */
   align-items: center;
   justify-content: center;
-  margin: 1rem auto 0;
+  margin: 1.25rem auto 0;
 }
 
 .social-wrapper a {
