@@ -72,12 +72,13 @@ section h2 {
   font-weight: bold;
 }
 
-.lead {
+.tagline {
   font-size: 1.25rem;
-  color: #ddd;
-  max-width: 700px;
-  line-height: 1.6;
+  color: #00e5ff;
+  margin-top: 1rem;
+  font-weight: 500;
 }
+
 
 
 /* Technical Skills: Side by Side Layout */
