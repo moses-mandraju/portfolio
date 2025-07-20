@@ -129,8 +129,8 @@ footer {
 
 .social-wrapper {
   display: inline-flex;
-  gap: 1.5rem;
-  padding: 0.75rem 1.5rem;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
   background-color: rgba(255, 255, 255, 0.08); /* visible on dark bg */
   border-radius: 9999px; /* full round corners */
   align-items: center;
