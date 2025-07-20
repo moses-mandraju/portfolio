@@ -155,16 +155,20 @@ footer {
 }
 
 .social-wrapper img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
-  filter: brightness(2);
+  filter: brightness(3);
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .social-wrapper a:hover img {
   filter: brightness(3);
   transform: scale(1.15);
+}
+
+.social-wrapper a:hover {
+  transform: scale(1.1);
 }
 
 /* Tooltip popup */
@@ -186,34 +190,6 @@ footer {
   transition: opacity 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 10;
-}
-
-.social-wrapper a:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-.social-wrapper a:hover {
-  transform: scale(1.1);
-}
-
-/* Tooltip styling for social-wrapper icons */
-.social-wrapper a::after {
-  content: attr(title);
-  position: absolute;
-  bottom: 130%;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 0.7rem;
-  padding: 4px 8px;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .social-wrapper a:hover::after {
