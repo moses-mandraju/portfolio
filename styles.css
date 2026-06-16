@@ -216,20 +216,6 @@ section{
     backdrop-filter:blur(15px);
 
     border:1px solid rgba(255,255,255,.06);
-
-    opacity:0;
-
-    transform:translateY(40px);
-
-    transition:.7s ease;
-}
-
-
-section.show{
-
-    opacity:1;
-
-    transform:translateY(0);
 }
 
 
